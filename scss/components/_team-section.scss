@@ -1,0 +1,17 @@
+/* Section team */
+.team {
+  background-color: var(--card-color);
+
+  &__container {
+    padding-top: var(--container-pading);
+    padding-bottom: var(--container-pading);
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: var(--indentation);
+  }
+}

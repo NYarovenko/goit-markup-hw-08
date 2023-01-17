@@ -1,0 +1,94 @@
+/* Header 
+__________________ */
+.header {
+  background: var(--color-white);
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 92px;
+  }
+
+  &__nav-list {
+    display: flex;
+  }
+
+  &__contacts-list {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__nav-item:not(:last-child) {
+    margin-right: var(--header-indents);
+  }
+
+  &__nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: inherit;
+
+    display: block;
+    padding-top: 32px;
+    transition: color var(--transition-time) var(--transition-function);
+
+    &:hover,
+    &:focus {
+      color: var(--active-color);
+    }
+
+    &--activ {
+      color: var(--active-color);
+
+      &::after {
+        content: "";
+        display: block;
+        margin-top: 28px;
+        width: 100%;
+        height: 4px;
+        background-color: var(--active-color);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &__contacts-item:not(:last-child) {
+    margin-right: var(--header-indents);
+  }
+
+  &__contacts-link {
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--description-text-color);
+    fill: var(--description-text-color);
+    transition: color var(--transition-time) var(--transition-function),
+      fill var(--transition-time) var(--transition-function);
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      color: var(--active-color);
+      fill: var(--active-color);
+    }
+  }
+
+  &__contacts-icon {
+    margin-right: var(--description-indentation);
+  }
+
+  &__portfolio {
+    border-bottom: 1px solid #ececec;
+  }
+}

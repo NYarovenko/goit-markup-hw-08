@@ -1,0 +1,34 @@
+/* Features  */
+.features__container {
+  padding-top: var(--container-pading);
+  padding-bottom: var(--container-pading);
+}
+
+.feauters__list {
+  display: flex;
+}
+
+.feauters__item:not(:last-child) {
+  margin-right: var(--indentation);
+}
+
+.feauters__svg {
+  display: block;
+}
+
+.feauters__icon {
+  background-color: var(--card-color);
+  border-radius: 4px;
+  margin-bottom: var(--indentation);
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__description {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--description-text-color);
+}
