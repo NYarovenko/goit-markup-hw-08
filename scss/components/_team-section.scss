@@ -3,15 +3,28 @@
   background-color: var(--card-color);
 
   &__container {
-    padding-top: var(--container-pading);
-    padding-bottom: var(--container-pading);
+    padding-top: var(--container-pading-mobile);
+    padding-bottom: var(--container-pading-mobile);
+
+    @media (min-width: 1200px) {
+      padding-top: var(--container-pading);
+      padding-bottom: var(--container-pading);
+    }
   }
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px 30px;
   }
 
-  &__item:not(:last-child) {
-    margin-right: var(--indentation);
+  &__item {
+    @media (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+    }
   }
 }

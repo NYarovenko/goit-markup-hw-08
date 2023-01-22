@@ -5,22 +5,105 @@
   padding-bottom: 60px;
 
   &__container {
-    display: flex;
-    align-items: baseline;
+    width: 100%;
+
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+
+  &__upper-part {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &__logo-address {
+    @media (max-width: 1200px) {
+      margin-bottom: var(--container-pading-mobile);
+    }
+
+    @media (min-width: 1200px) {
+      margin-right: 70px;
+    }
   }
 
   &__logo {
-    display: inline-block;
-    margin-right: 0;
-    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+    margin-bottom: 28px;
+    // display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    @media (min-width: 1200px) {
+      display: inline-block;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__address {
+    @media (max-width: 1200px) {
+      display: block;
+      text-align: center;
+    }
   }
 
   &__social {
-    margin-left: 70px;
+    @media (max-width: 1200px) {
+      display: block;
+      text-align: center;
+      margin-bottom: var(--container-pading-mobile);
+    }
+
+    @media (min-width: 1200px) {
+      // margin-left: 70px;
+      margin-right: 94px;
+    }
+  }
+
+  &__form-subscription {
+    @media (max-width: 1200px) {
+      display: block;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 450px;
+    }
+
+    @media (min-width: 1200px) {
+      // margin-left: auto;
+      width: 100%;
+    }
+
+    .form-subscription__subscription {
+      @media (max-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .form-subscription__input-email {
+      @media (max-width: 1200px) {
+        margin-bottom: var(--margin_20);
+        width: 100%;
+      }
+
+      @media (min-width: 1200px) {
+        margin-right: 12px;
+        // flex-grow: 2;
+      }
+    }
   }
 
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: var(--margin_20);
   }
 
   &__social-link {
@@ -37,6 +120,11 @@
   }
 
   &__button {
+    @media (max-width: 1200px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     display: flex;
     align-items: center;
     text-align: center;

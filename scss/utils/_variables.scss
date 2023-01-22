@@ -17,10 +17,16 @@
   --icon-notactive: #afb1b8;
 
   --container-pading: 94px;
+  --container-pading-mobile: 60px;
   --header-indents: 50px;
   --indentation: 30px;
+  --margin_20: 20px;
   --description-indentation: 10px;
 
   --transition-time: 250ms;
   --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1200px;
 }

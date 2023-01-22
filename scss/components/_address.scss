@@ -3,6 +3,7 @@
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  white-space: nowrap;
 
   &__item:not(:last-child) {
     margin-bottom: 9px;

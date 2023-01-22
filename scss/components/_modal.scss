@@ -1,7 +1,10 @@
 .modal {
+  width: 450px;
   position: absolute;
-  width: 528px;
-  /* height: 581px; */
+
+  @media (min-width: 1200px) {
+    width: 528px;
+  }
 
   top: 50%;
   left: 50%;

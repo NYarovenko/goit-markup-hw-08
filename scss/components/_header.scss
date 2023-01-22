@@ -19,11 +19,23 @@ __________________ */
 
   &__nav-list {
     display: flex;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__contacts-list {
-    display: flex;
+    // display: flex;
     margin-left: auto;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    @media (min-width: 1200px) {
+      display: flex;
+    }
   }
 
   &__nav-item:not(:last-child) {
@@ -62,7 +74,13 @@ __________________ */
   }
 
   &__contacts-item:not(:last-child) {
-    margin-right: var(--header-indents);
+    @media (min-width: 1200px) {
+      margin-right: var(--header-indents);
+    }
+
+    @media (max-width: 1199px) {
+      margin-bottom: var(--description-indentation);
+    }
   }
 
   &__contacts-link {
@@ -90,5 +108,22 @@ __________________ */
 
   &__portfolio {
     border-bottom: 1px solid #ececec;
+  }
+
+  &__burger {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    transition: fill var(--transition-time) var(--transition-function);
+
+    &:hover,
+    &:focus {
+      fill: var(--blue-color-logo);
+    }
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }

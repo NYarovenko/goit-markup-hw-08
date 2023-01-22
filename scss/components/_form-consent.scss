@@ -37,8 +37,14 @@
 
   &__title {
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(14 / 24);
+    font-size: 12px;
+    line-height: calc(14 / 12);
+
+    @media (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(14 / 24);
+    }
+
     margin: 0;
 
     letter-spacing: 0.03em;
