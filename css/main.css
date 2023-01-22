@@ -344,7 +344,6 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--color-white);
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -804,6 +803,12 @@ __________________ */
   display: flex;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .header__container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 .header__nav {
   display: flex;
   align-items: center;
@@ -914,16 +919,32 @@ __________________ */
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
-  height: 600px;
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../../images/hero@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero@2x.jpg");
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    height: 459px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .hero__titel {
@@ -943,7 +964,7 @@ __________________ */
   .hero__titel {
     font-size: 26px;
     line-height: 1.6153846154;
-    width: 360px;
+    max-width: 360px;
   }
 }
 .hero__button {
@@ -1057,6 +1078,17 @@ __________________ */
   .team__container {
     padding-top: var(--container-pading);
     padding-bottom: var(--container-pading);
+  }
+}
+@media (max-width: 768px) {
+  .team__second-title {
+    font-size: 28px;
+    line-height: var(33/28);
+  }
+}
+@media (max-width: 1200px) {
+  .team__second-title {
+    margin-bottom: 30px;
   }
 }
 .team__list {
@@ -1258,6 +1290,10 @@ __________________ */
   }
 }
 
+.footer__upper-part {
+  align-items: baseline;
+}
+
 /* ------------------ */
 /* portfolio.html
 section Портфоліо */
@@ -1412,10 +1448,20 @@ section Портфоліо */
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 1px solid tomato; */
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }/*# sourceMappingURL=main.css.map */

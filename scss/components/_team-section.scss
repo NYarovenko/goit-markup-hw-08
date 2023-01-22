@@ -12,6 +12,17 @@
     }
   }
 
+  &__second-title {
+    @media (max-width: 768px) {
+      font-size: 28px;
+      line-height: var(33 / 28);
+    }
+
+    @media (max-width: 1200px) {
+      margin-bottom: 30px;
+    }
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
